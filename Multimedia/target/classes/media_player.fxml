@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="Controller">
+    <children>
+        <Button fx:id="btnOpen" text="Open" onAction="#handleOpen" />
+        <Button fx:id="btnPlay" text="Play" onAction="#handlePlay" />
+        <Button fx:id="btnPause" text="Pause" onAction="#handlePause" />
+        <Button fx:id="btnStop" text="Stop" onAction="#handleStop" />
+
+        <Label fx:id="lblCurrentFile" text="No file selected" />
+
+        <Slider fx:id="volumeSlider" min="0" max="1" step="0.01" onMouseDragged="#handleVolumeChange" />
+        <Slider fx:id="seekSlider" min="0" max="1" step="0.01" onMouseDragged="#handleSeek" />
+
+        <Label fx:id="lblCurrentTime" text="0:00" />
+        <Label fx:id="lblTotalDuration" text="0:00" />
+
+        <MediaView fx:id="mediaView" />
+    </children>
+</AnchorPane>

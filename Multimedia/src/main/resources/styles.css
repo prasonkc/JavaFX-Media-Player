@@ -1,0 +1,12 @@
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+
+.slider {
+    -fx-pref-width: 200px;
+}
+
+.label {
+    -fx-font-size: 12px;
+}
